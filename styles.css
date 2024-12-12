@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
 }
 .wrapper {
   background: linear-gradient(135deg, #2df453, #384431);
@@ -17,14 +20,13 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   border-radius: 10px;
 }
 
 header {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
   text-align: center;
 }
@@ -81,8 +83,9 @@ main {
 }
 .projectList div {
   margin-top: 30px;
-  background-color: #384431;
-  color: #f2f2f2;
+  background-color: #2df453;
+  border: 1px solid #384431;
+  color: #333333;
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
