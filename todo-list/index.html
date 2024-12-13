@@ -9,12 +9,14 @@
   <body>
     <div class="container">
       <div class="todo-app">
-        <h2>To Do List <img src="./images/To Do.png" alt="" /></h2>
-        <div class="inputBox">
+        <h2><img src="./images/To Do.png" alt="" /> To Do List</h2>
+        <div class="inputBoxContainer">
           <input type="text" id="input-box" placeholder="Add ToDo item" />
-          <button>Add</button>
+          <button onclick="addTask()">Add Item</button>
         </div>
+        <ul id="list-container"></ul>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
