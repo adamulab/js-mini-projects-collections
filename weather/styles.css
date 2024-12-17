@@ -21,7 +21,7 @@ header h1 {
 }
 .card {
   width: 90%;
-  max-width: 470px;
+  max-width: 570px;
   background: linear-gradient(160deg, #00feba, #5b54b3);
   color: white;
   margin: 30px auto 0;
@@ -59,6 +59,19 @@ header h1 {
 .search button img {
   width: 20px;
 }
+.card-content {
+  display: none;
+}
+.card-items {
+  display: flex;
+}
+.card-left {
+  width: 60%;
+}
+.card-right {
+  width: 39%;
+  padding-top: 60px;
+}
 .weather-icon {
   width: 170px;
   margin-top: 30px;
@@ -74,8 +87,9 @@ header h1 {
 }
 .details {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
   padding: 0px 20px;
   margin-top: 50px;
 }
@@ -86,15 +100,12 @@ header h1 {
 }
 .col img {
   width: 40px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .humidity,
 .wind {
   font-size: 28px;
   margin-top: -6px;
-}
-.weather {
-  display: none;
 }
 .goBack {
   width: 100%;
