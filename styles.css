@@ -9,7 +9,7 @@
 .wrapper {
   background: linear-gradient(135deg, #2df453, #384431);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 10px;
 }
 .container {
