@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adamudevlab Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Adamudevlab Quiz</h1>
+      <div id="name-input-container">
+        <input type="text" id="player-name" placeholder="Enter your name" />
+        <button id="start-btn" class="btn">Start Quiz</button>
+      </div>
+      <div id="quiz-content" class="hide">
+        <div id="overall-timer">
+          Overall Time Left: <span id="overall-time">30:00</span>
+        </div>
+        <div id="question-timer">Time Left: <span id="time">20</span>s</div>
+        <div id="question-container">
+          <p id="question"></p>
+          <div id="answer-buttons" class="btn-grid">
+            <!-- Answer buttons will be dynamically added here -->
+          </div>
+        </div>
+        <div class="controls">
+          <button id="next-btn" class="btn hide">Next</button>
+        </div>
+      </div>
+      <div id="score-container" class="hide">
+        <h2>Quiz Result</h2>
+        <p>Player: <span id="player-name-display"></span></p>
+        <p>
+          Your Score: <span id="score"></span>/<span
+            id="total-questions"
+          ></span>
+        </p>
+        <h3>Top 5 Scores</h3>
+        <ul id="top-scores-list"></ul>
+        <button id="restart-btn" class="btn">Restart Quiz</button>
+      </div>
+    </div>
+
+    <!-- Sound Effects -->
+    <audio id="correct-sound" src="correct.mp3"></audio>
+    <audio id="wrong-sound" src="wrong.mp3"></audio>
+    <audio id="timer-sound" src="timer.mp3" loop></audio>
+    <!-- Ticking sound (looped) -->
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
